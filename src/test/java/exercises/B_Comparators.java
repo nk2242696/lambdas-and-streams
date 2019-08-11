@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-
 import model.Person;
 
 /**
@@ -54,7 +53,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator02() {
-        Comparator<String> compareByLengthThenAlphabetical = null; // TODO
+        Comparator<String> compareByLengthThenAlphabetical = Comparator.comparing(String ::length).thenComparing(Comparator.naturalOrder());
 
         assertTrue(compareByLengthThenAlphabetical.compare("FOUR", "TWO") > 0);
         assertTrue(compareByLengthThenAlphabetical.compare("ONE", "SEVEN") < 0);
@@ -75,7 +74,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator03() {
-        Comparator<Person> comparebyLastName = null; // TODO
+        Comparator<Person> comparebyLastName =  Comparator.comparing(Person::getLastName);
 
         assertTrue(comparebyLastName.compare(michael, rod) < 0);
         assertTrue(comparebyLastName.compare(paul, paul) == 0);
@@ -94,7 +93,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator04() {
-        Comparator<Person> comparebyLastNameThenFirstName = null; // TODO
+        Comparator<Person> comparebyLastNameThenFirstName = Comparator.comparing(Person::getLastName).thenComparing(Person::getFirstName);
 
         assertTrue(comparebyLastNameThenFirstName.compare(michael, rod) < 0);
         assertTrue(comparebyLastNameThenFirstName.compare(paul, paul) == 0);
@@ -111,7 +110,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator05() {
-        Comparator<Person> comparebyLastNameThenFirstNameReversed = null; // TODO
+        Comparator<Person> comparebyLastNameThenFirstNameReversed = Comparator.comparing(Person::getLastName).thenComparing(Person::getFirstName).reversed();
 
         assertFalse(comparebyLastNameThenFirstNameReversed.compare(michael, rod) < 0);
         assertTrue(comparebyLastNameThenFirstNameReversed.compare(paul, paul) == 0);
@@ -129,7 +128,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator06() {
-        Comparator<Person> comparebyLastNameThenFirstNameWithNull = null; // TODO
+        Comparator<Person> comparebyLastNameThenFirstNameWithNull = Comparator.nullsLast(Comparator.comparing(Person::getLastName).thenComparing(Person::getFirstName));
 
         assertTrue(comparebyLastNameThenFirstNameWithNull.compare(michael, rod) < 0);
         assertTrue(comparebyLastNameThenFirstNameWithNull.compare(paul, paul) == 0);
@@ -148,7 +147,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator07() {
-        Comparator<Person> comparebyAge = null; // TODO
+        Comparator<Person> comparebyAge = Comparator.comparing(Person::getAge);
 
         assertTrue(comparebyAge.compare(michael, rod) < 0);
         assertTrue(comparebyAge.compare(paul, paul) == 0);
@@ -169,7 +168,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator08() {
-        IntBinaryOperator intCompare = null; // TODO
+        IntBinaryOperator intCompare = (a,b)->(a<b)?-1:(a>b)?1:0;
 
         assertTrue(intCompare.applyAsInt(0, 1) < 0);
         assertTrue(intCompare.applyAsInt(1, 1) == 0);
@@ -189,7 +188,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator09() {
-        IntBinaryOperator intCompare = null; // TODO
+        IntBinaryOperator intCompare = (a,b)-> (a<b)?-1:(a==b)?0:1;
 
         assertTrue(intCompare.applyAsInt(0, 1) < 0);
         assertTrue(intCompare.applyAsInt(1, 1) == 0);
@@ -216,7 +215,7 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator10() {
-        DoubleToIntBiFunction doubleCompare = null; // TODO
+        DoubleToIntBiFunction doubleCompare = Double::compare;
 
         assertTrue(doubleCompare.applyAsInt(0.0, 1.0) < 0);
         assertTrue(doubleCompare.applyAsInt(1.0, 1.0) == 0);
