@@ -10,6 +10,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+
 import model.Person;
 
 /**
@@ -33,7 +34,8 @@ public class B_Comparators {
      */
     @Test @Ignore
     public void comparator01() {
-        Comparator<String> compareByLength = null; // TODO
+        Comparator<String> compareByLength = (a,b)->{ if(a.length()==b.length()) return 0;else if(a.length()>b.length())return 1;else
+            return -1;};
 
         assertTrue(compareByLength.compare("FOUR", "TWO") > 0);
         assertTrue(compareByLength.compare("ONE", "SEVEN") < 0);

@@ -1,0 +1,93 @@
+
+ssquid:S4144>"\Update this method so that its implementation is not identical to "a_predicate2" on line 46.(ø ‹Ø
+ysquid:S4144’"\Update this method so that its implementation is not identical to "b_function2" on line 135.(–˜ ıúÿÿÿÿ
+ysquid:S4144Ë"\Update this method so that its implementation is not identical to "c_consumer2" on line 191.(–éúµÿÿÿÿÿ
+tsquid:S4144€"\Update this method so that its implementation is not identical to "d_supplier2" on line 246.(Œ„ƒË
+squid:S4144ó"bUpdate this method so that its implementation is not identical to "g_boundMethodRef1" on line 345.(ëŒ•¸øÿÿÿÿ
+xsquid:S4276 "[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(ÏÁø°úÿÿÿÿ
+Nsquid:S1135#"2Complete the task associated to this TODO comment.(‰Ğàóûÿÿÿÿ
+Nsquid:S1135/"2Complete the task associated to this TODO comment.(‰Ğàóûÿÿÿÿ
+Nsquid:S1135?"2Complete the task associated to this TODO comment.(‰Ğàóûÿÿÿÿ
+Nsquid:S1135U"2Complete the task associated to this TODO comment.(µ¿«‹øÿÿÿÿ
+Nsquid:S1135k"2Complete the task associated to this TODO comment.(Š›·Ñüÿÿÿÿ
+Isquid:S1135}"2Complete the task associated to this TODO comment.(ÄØè»
+Jsquid:S1135ˆ"2Complete the task associated to this TODO comment.(ÄØè»
+Jsquid:S1135“"2Complete the task associated to this TODO comment.(ÄØè»
+Osquid:S1135£"2Complete the task associated to this TODO comment.(½´úûÿÿÿÿ
+Jsquid:S1135´"2Complete the task associated to this TODO comment.(æ»ø¢
+Jsquid:S1135À"2Complete the task associated to this TODO comment.(¢ùÒê
+Jsquid:S1135Ì"2Complete the task associated to this TODO comment.(¢ùÒê
+Isquid:S1135Ü"2Complete the task associated to this TODO comment.(ø“Ê
+Jsquid:S1135í"2Complete the task associated to this TODO comment.(æœé–
+Jsquid:S1135÷"2Complete the task associated to this TODO comment.(æœé–
+Jsquid:S1135"2Complete the task associated to this TODO comment.(æœé–
+Osquid:S1135"2Complete the task associated to this TODO comment.(‘ñò•úÿÿÿÿ
+Jsquid:S1135™"2Complete the task associated to this TODO comment.(³»êá
+Jsquid:S1135®"2Complete the task associated to this TODO comment.(³»êá
+Jsquid:S1135Ê"2Complete the task associated to this TODO comment.(µ¡œÆ
+Osquid:S1135Ú"2Complete the task associated to this TODO comment.(»Ó…Şúÿÿÿÿ
+Osquid:S1135ô"2Complete the task associated to this TODO comment.(»Ó…Şúÿÿÿÿ
+Gsquid:S1481R"0Remove this unused "startsWithJ" local variable.(µ‡
+Esquid:S1481S".Remove this unused "lengthIs7" local variable.(ãçÃ
+Esquid:S1481g".Remove this unused "lengthIs9" local variable.(ú½ì
+Lsquid:S1481h"0Remove this unused "equalsError" local variable.(îïòëûÿÿÿÿ
+Ksquid:S1481 ".Remove this unused "unNullify" local variable.(ÏÁø°úÿÿÿÿ
+Hsquid:S1481¡"+Remove this unused "length" local variable.(®Ù÷Ëıÿÿÿÿ
+Dsquid:S1481Ù"'Remove this unused "c1" local variable.(÷ıÖÒÿÿÿÿÿ
+Dsquid:S1481Ú"'Remove this unused "c2" local variable.(Îğûñùÿÿÿÿ
+Bsquid:S1481È"+Remove this unused "suffix" local variable.(™ãÍ(
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(éÁ—½
+ksquid:S00100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÊÜùÿÿÿÿ
+ksquid:S00100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å…ˆ´øÿÿÿÿ
+fsquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø ‹Ø
+ksquid:S00100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÒÈıÿÿÿÿ
+fsquid:S00100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıİ­ğ
+esquid:S00100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ÀT
+gsquid:S00100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ï´¹
+lsquid:S00100’"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–˜ ıúÿÿÿÿ
+gsquid:S00100Ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âƒˆ
+lsquid:S00100³"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö‡¸øÿÿÿÿ
+gsquid:S00100¿"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÚ½¤
+lsquid:S00100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–éúµÿÿÿÿÿ
+lsquid:S00100Ø"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òäéùÿÿÿÿ
+gsquid:S00100ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™˜’ù
+lsquid:S00100ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œâµİùÿÿÿÿ
+gsquid:S00100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ƒË
+gsquid:S00100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Ê‰Í
+lsquid:S00100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—šŞÆøÿÿÿÿ
+lsquid:S00100­"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹İ¶ìıÿÿÿÿ
+lsquid:S00100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õç½Şúÿÿÿÿ
+lsquid:S00100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à’åìùÿÿÿÿ
+lsquid:S00100ó"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëŒ•¸øÿÿÿÿ
+^squid:S2259%"BA "NullPointerException" could be thrown; "pred" is nullable here.(²ãÒÈıÿÿÿÿ
+qsquid:S2259W"UA "NullPointerException" could be thrown; "startsWithJAndLengthIs7" is nullable here.(Øø¤¾ûÿÿÿÿ
+dsquid:S2259¥"GA "NullPointerException" could be thrown; "lengthBis" is nullable here.(šÑ¥†øÿÿÿÿ
+^squid:S2259ß"FA "NullPointerException" could be thrown; "consumer" is nullable here.(ºõ«·
+dsquid:S2259m"NA "NullPointerException" could be thrown; "lengthIs9orError" is nullable here.(¦Ü„E
+_squid:S2259Š"BA "NullPointerException" could be thrown; "func" is nullable here.(—‘ëùşÿÿÿÿ
+^squid:S2259A"BA "NullPointerException" could be thrown; "pred" is nullable here.(ùúçŒşÿÿÿÿ
+_squid:S2259•"BA "NullPointerException" could be thrown; "func" is nullable here.(—‘ëùşÿÿÿÿ
+Zsquid:S2259Ã"BA "NullPointerException" could be thrown; "cons" is nullable here.(êĞÔ…
+asquid:S2259›"DA "NullPointerException" could be thrown; "bifunc" is nullable here.(›œ°ùÿÿÿÿ
+Zsquid:S2259Ï"BA "NullPointerException" could be thrown; "cons" is nullable here.(êĞÔ…
+^squid:S2259ï"AA "NullPointerException" could be thrown; "sup" is nullable here.(ÇáÚ¡ùÿÿÿÿ
+Zsquid:S2259·"BA "NullPointerException" could be thrown; "cons" is nullable here.(ØÌö„
+Zsquid:S2259Ü"BA "NullPointerException" could be thrown; "func" is nullable here.(üÆà×
+^squid:S22591"BA "NullPointerException" could be thrown; "pred" is nullable here.(ùúçŒşÿÿÿÿ
+asquid:S2259"DA "NullPointerException" could be thrown; "bifunc" is nullable here.(âÜ§ëıÿÿÿÿ
+Ysquid:S2259ƒ"AA "NullPointerException" could be thrown; "sup" is nullable here.(îâğø
+\squid:S2259Ì"?A "NullPointerException" could be thrown; "r" is nullable here.(‘¯ÁÄüÿÿÿÿ
+Ysquid:S2259ù"AA "NullPointerException" could be thrown; "sup" is nullable here.(îâğø
+\squid:S2259°"DA "NullPointerException" could be thrown; "bifunc" is nullable here.(à¼…
+Ysquid:S2259"BA "NullPointerException" could be thrown; "func" is nullable here.(ªí×™
+Zsquid:S2259ö"BA "NullPointerException" could be thrown; "func" is nullable here.(üÆà×
+Tsquid:S1854S"=Remove this useless assignment to local variable "lengthIs7".(ãçÃ
+Vsquid:S1854R"?Remove this useless assignment to local variable "startsWithJ".(µ‡
+[squid:S1854h"?Remove this useless assignment to local variable "equalsError".(îïòëûÿÿÿÿ
+Tsquid:S1854g"=Remove this useless assignment to local variable "lengthIs9".(ú½ì
+Wsquid:S1854¡":Remove this useless assignment to local variable "length".(®Ù÷Ëıÿÿÿÿ
+Zsquid:S1854 "=Remove this useless assignment to local variable "unNullify".(ÏÁø°úÿÿÿÿ
+Ssquid:S1854Ú"6Remove this useless assignment to local variable "c2".(Îğûñùÿÿÿÿ
+Ssquid:S1854Ù"6Remove this useless assignment to local variable "c1".(÷ıÖÒÿÿÿÿÿ
+Qsquid:S1854È":Remove this useless assignment to local variable "suffix".(™ãÍ(
+Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

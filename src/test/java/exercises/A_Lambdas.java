@@ -32,7 +32,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void a_predicate1() {
-        Predicate<String> pred = null; // TODO
+        Predicate<String> pred = s->s.length()>4;
 
         assertTrue(pred.test("abcde"));
         assertFalse(pred.test("abcd"));
@@ -44,7 +44,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void a_predicate2() {
-        Predicate<String> pred = null; // TODO
+        Predicate<String> pred = s->s.isEmpty();
 
         assertTrue(pred.test(""));
         assertFalse(pred.test("a"));
@@ -60,7 +60,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void a_predicate3() {
-        Predicate<String> pred = null; // TODO
+        Predicate<String> pred = String :: isEmpty;
 
         assertTrue(pred.test(""));
         assertFalse(pred.test("a"));
@@ -82,7 +82,7 @@ public class A_Lambdas {
         Predicate<String> startsWithJ = s -> s.startsWith("J");
         Predicate<String> lengthIs7 = s -> s.length() == 7;
 
-        Predicate<String> startsWithJAndLengthIs7 = null; // TODO
+        Predicate<String> startsWithJAndLengthIs7 = startsWithJ.and(lengthIs7);
 
         assertFalse(startsWithJAndLengthIs7.test("Hello"));
         assertFalse(startsWithJAndLengthIs7.test("HelloJ1"));
@@ -104,7 +104,7 @@ public class A_Lambdas {
         Predicate<String> equalsError = "ERROR"::equals;
         // Note: this could also be: Predicate.isEqual("ERROR")
 
-        Predicate<String> lengthIs9orError = null; // TODO
+        Predicate<String> lengthIs9orError = lengthIs9.or(equalsError);
 
         assertFalse(lengthIs9orError.test("Hello"));
         assertTrue(lengthIs9orError.test("Hello J1!"));
@@ -122,7 +122,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void b_function1() {
-        Function<String, String> func = null; // TODO
+        Function<String, String> func = s->"("+s+")";
 
         assertEquals("(abc)", func.apply("abc"));
     }
@@ -133,7 +133,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void b_function2() {
-        Function<String, String> func = null; // TODO
+        Function<String, String> func = s->s.toUpperCase();
 
         assertEquals("ABC", func.apply("abc"));
     }
@@ -144,7 +144,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void b_function3() {
-        Function<String, String> func = null; // TODO
+        Function<String, String> func = String::toUpperCase;
 
         assertEquals("ABC", func.apply("abc"));
     }
@@ -160,7 +160,7 @@ public class A_Lambdas {
         Function<String, String> unNullify = s -> s == null ? "" : s;
         Function<String, Integer> length = String::length;
 
-        Function<String, Integer> lengthBis = null; // TODO
+        Function<String, Integer> lengthBis = unNullify.andThen(length);
 
         assertEquals((Integer)14, lengthBis.apply("Hello JavaOne!"));
         assertEquals((Integer)0, lengthBis.apply(""));
@@ -177,7 +177,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void c_consumer1() {
-        Consumer<StringBuilder> cons = null; // TODO
+        Consumer<StringBuilder> cons = s->s.append("abc");
 
         StringBuilder sb = new StringBuilder("xyz");
         cons.accept(sb);
@@ -189,9 +189,9 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void c_consumer2() {
-        Consumer<List<String>> cons = null; // TODO
+        Consumer<List<String>> cons = s->s.clear();
 
-        List<String> list = new ArrayList<>(List.of("a", "b", "c"));
+        List<String> list = new ArrayList<>(Arrays.asList("a","b","c"));
         cons.accept(list);
         assertTrue(list.isEmpty());
     }
@@ -201,9 +201,9 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void c_consumer3() {
-        Consumer<List<String>> cons = null; // TODO
+        Consumer<List<String>> cons = List::clear;
 
-        List<String> list = new ArrayList<>(List.of("a", "b", "c"));
+        List<String> list = new ArrayList<>(Arrays.asList("a","b","c"));
         cons.accept(list);
         assertTrue(list.isEmpty());
     }
@@ -217,11 +217,11 @@ public class A_Lambdas {
         Consumer<List<String>> c1 = list -> list.add("first");
         Consumer<List<String>> c2 = list -> list.add("second");
 
-        Consumer<List<String>> consumer = null; // TODO
+        Consumer<List<String>> consumer = c1.andThen(c2);
 
-        List<String> list = new ArrayList<>(List.of("a", "b", "c"));
+        List<String> list = new ArrayList<>(Arrays.asList("a","b","c"));
         consumer.accept(list);
-        assertEquals(List.of("a", "b", "c", "first", "second"), list);
+        assertEquals(Arrays.asList("a", "b", "c", "first", "second"), list);
     }
     // Hint:
     // <editor-fold defaultstate="collapsed">
@@ -234,7 +234,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void d_supplier1() {
-        Supplier<StringBuilder> sup = null; // TODO
+        Supplier<StringBuilder> sup = ()->new StringBuilder("abc");
 
         assertEquals("abc", sup.get().toString());
     }
@@ -244,7 +244,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void d_supplier2() {
-        Supplier<StringBuilder> sup = null; // TODO
+        Supplier<StringBuilder> sup = ()->new StringBuilder();
 
         assertEquals("", sup.get().toString());
     }
@@ -254,7 +254,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void d_supplier3() {
-        Supplier<StringBuilder> sup = null; // TODO
+        Supplier<StringBuilder> sup = StringBuilder::new;
 
         assertEquals("", sup.get().toString());
     }
@@ -266,7 +266,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void e_bifunction1() {
-        BiFunction<String, String, String> bifunc = null; // TODO
+        BiFunction<String, String, String> bifunc = (s1,s2)->s1+s2+s1;
 
         assertEquals("FirstSecondFirst", bifunc.apply("First", "Second"));
     }
@@ -278,7 +278,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void e_bifunction2() {
-        BiFunction<String, String, Integer> bifunc = null; // TODO
+        BiFunction<String, String, Integer> bifunc = (s1,s2)->{ return s1.contains(s2)?s1.indexOf(s2):-1;};
 
         assertEquals(3, bifunc.apply("abcdefghi", "def").intValue());
         assertEquals(-1, bifunc.apply("abcdefghi", "xyz").intValue());
@@ -299,7 +299,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void e_bifunction3() {
-        BiFunction<String, String, Integer> bifunc = null; // TODO
+        BiFunction<String, String, Integer> bifunc = (s1,s2)->s1.indexOf(s2);
 
         assertEquals(3, bifunc.apply("abcdefghij", "def").intValue());
         assertEquals(-1, bifunc.apply("abcdefghij", "xyz").intValue());
@@ -327,7 +327,7 @@ public class A_Lambdas {
         StringBuilder sb = new StringBuilder("abc");
         String suffix = "xyz";
 
-        Runnable r = null; // TODO
+        Runnable r = ()->sb.append(suffix);
 
         r.run();
         r.run();
@@ -343,7 +343,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void g_boundMethodRef1() {
-        Function<String, Integer> func = null; // TODO
+        Function<String, Integer> func = (s)->"abcdefghij".indexOf(s);
 
         assertEquals(2, func.apply("cde").intValue());
         assertEquals(4, func.apply("efg").intValue());
@@ -369,7 +369,7 @@ public class A_Lambdas {
      */
     @Test @Ignore
     public void g_boundMethodRef2() {
-        Function<String, Integer> func = null; // TODO
+        Function<String, Integer> func = "abcdefghij"::indexOf;
 
         assertEquals(2, func.apply("cde").intValue());
         assertEquals(4, func.apply("efg").intValue());

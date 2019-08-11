@@ -1,0 +1,23 @@
+
+zsquid:S4144½"]Update this method so that its implementation is not identical to "comparator08" on line 169.(–·ƒ¤øÿÿÿÿ
+Nsquid:S1135$"2Complete the task associated to this TODO comment.(âƒûÆşÿÿÿÿ
+Nsquid:S11357"2Complete the task associated to this TODO comment.(ŞÔöşÿÿÿÿ
+Isquid:S1135L"2Complete the task associated to this TODO comment.(æâ˜¯
+Isquid:S1135_"2Complete the task associated to this TODO comment.(€´­
+Isquid:S1135p"2Complete the task associated to this TODO comment.(É§ú
+Jsquid:S1135‚"2Complete the task associated to this TODO comment.(èü³
+Osquid:S1135•"2Complete the task associated to this TODO comment.(Íå´•úÿÿÿÿ
+Jsquid:S1135ª"2Complete the task associated to this TODO comment.(ä«£ì
+Jsquid:S1135¾"2Complete the task associated to this TODO comment.(ä«£ì
+Jsquid:S1135Ù"2Complete the task associated to this TODO comment.(ñş¥Ü
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ôë†§
+dsquid:S2259&"MA "NullPointerException" could be thrown; "compareByLength" is nullable here.(ÈüñÏ
+tsquid:S22599"]A "NullPointerException" could be thrown; "compareByLengthThenAlphabetical" is nullable here.(Õ¤«
+{squid:S2259r"dA "NullPointerException" could be thrown; "comparebyLastNameThenFirstNameReversed" is nullable here.(˜¶»×
+esquid:S2259¬"HA "NullPointerException" could be thrown; "intCompare" is nullable here.(´ÍÂşÿÿÿÿ
+esquid:S2259N"OA "NullPointerException" could be thrown; "comparebyLastName" is nullable here.(¾—Ï
+bsquid:S2259—"JA "NullPointerException" could be thrown; "comparebyAge" is nullable here.(ß¯£À
+xsquid:S2259a"\A "NullPointerException" could be thrown; "comparebyLastNameThenFirstName" is nullable here.(ĞƒÂûÿÿÿÿ
+squid:S2259„"dA "NullPointerException" could be thrown; "comparebyLastNameThenFirstNameWithNull" is nullable here.(ş²òáùÿÿÿÿ
+esquid:S2259À"HA "NullPointerException" could be thrown; "intCompare" is nullable here.(´ÍÂşÿÿÿÿ
+csquid:S2259Û"KA "NullPointerException" could be thrown; "doubleCompare" is nullable here.(ãÁ°å

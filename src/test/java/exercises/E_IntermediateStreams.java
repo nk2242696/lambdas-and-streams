@@ -29,7 +29,7 @@ public class E_IntermediateStreams {
      */
     @Test @Ignore
     public void e1_stringsToCharacters() {
-        List<String> input = List.of("alfa", "bravo", "charlie");
+        List<String> input = Arrays.asList("alfa", "bravo", "charlie");
 
         List<Character> result = null; // TODO
 
@@ -62,7 +62,7 @@ public class E_IntermediateStreams {
         List<String> output = null; // TODO
 
         assertEquals(
-            List.of(
+            Arrays.asList(
                 "From", "fairest", "creatures", "we", "desire", "increase",
                 "That", "thereby", "beauty's", "rose", "might", "never", "die",
                 "But", "as", "the", "riper", "should", "by", "time", "decease",
@@ -96,7 +96,7 @@ public class E_IntermediateStreams {
         List<String> output = null; // TODO
 
         assertEquals(
-            List.of(
+            Arrays.asList(
                 "abundance", "beauty's", "contracted", "creatures",
                 "increase", "niggarding", "ornament", "substantial"),
             output);
@@ -119,7 +119,7 @@ public class E_IntermediateStreams {
         List<String> result = null; // TODO
 
         assertEquals(
-            List.of(
+            Arrays.asList(
                 "substantial", "ornament", "niggarding", "increase",
                 "creatures", "contracted", "beauty's", "abundance"),
             result);
@@ -141,7 +141,7 @@ public class E_IntermediateStreams {
         List<String> result = null; // TODO
 
         assertEquals(
-            List.of(
+            Arrays.asList(
                 "a", "as", "be", "by", "in", "or", "to", "we",
                 "and", "art", "bud", "but", "die", "due", "eat", "foe",
                 "his", "now", "own", "the", "thy", "too", "bear", "else",
@@ -214,7 +214,7 @@ public class E_IntermediateStreams {
         List<String> result = null; // TODO
 
         assertEquals(
-            List.of(ArrayList.class, AbstractList.class, AbstractCollection.class, Object.class),
+            Arrays.asList(ArrayList.class, AbstractList.class, AbstractCollection.class, Object.class),
             result);
     }
     // Hint:
